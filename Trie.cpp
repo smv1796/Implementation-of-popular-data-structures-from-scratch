@@ -106,7 +106,7 @@ void Trie::removeH(TrieNode* root, string word)
     }
     else return;
 
-    if(child->isTerminal)
+    if(!child->isTerminal)
     {
         for(int i=0;i<26;++i)
         {
